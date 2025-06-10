@@ -4,14 +4,10 @@
 #
 #    pip-compile --no-emit-index-url --output-file=requirements/base.txt requirements/base.in
 #
---trusted-host pypi.ngc.nvidia.com
-
 anyio==4.9.0
     # via
     #   httpx
     #   jupyter-server
-appnope==0.1.4
-    # via ipykernel
 argon2-cffi==25.1.0
     # via jupyter-server
 argon2-cffi-bindings==21.2.0
@@ -33,7 +29,7 @@ beautifulsoup4==4.13.4
 bleach[css]==6.2.0
     # via nbconvert
 bokeh==3.7.3
-    # via -r requirements/base.in
+    # via -r base.in
 certifi==2025.4.26
     # via
     #   httpcore
@@ -62,7 +58,7 @@ exceptiongroup==1.3.0
 executing==2.2.0
     # via stack-data
 faiss-cpu==1.11.0
-    # via -r requirements/base.in
+    # via -r base.in
 fastjsonschema==2.21.1
     # via nbformat
 fqdn==1.5.1
@@ -81,14 +77,14 @@ idna==3.10
     #   requests
 ipykernel==6.29.5
     # via
-    #   -r requirements/base.in
+    #   -r base.in
     #   jupyterlab
 ipython==8.37.0
     # via
     #   ipykernel
     #   ipywidgets
 ipywidgets==8.1.7
-    # via -r requirements/base.in
+    # via -r base.in
 isoduration==20.11.0
     # via jsonschema
 jedi==0.19.2
@@ -180,7 +176,7 @@ nbformat==5.10.4
 nest-asyncio==1.6.0
     # via ipykernel
 notebook==7.4.2
-    # via -r requirements/base.in
+    # via -r base.in
 notebook-shim==0.2.4
     # via
     #   jupyterlab
@@ -213,7 +209,7 @@ packaging==25.0
     #   nbconvert
 pandas==2.2.3
     # via
-    #   -r requirements/base.in
+    #   -r base.in
     #   bokeh
 pandocfilters==1.5.1
     # via nbconvert
@@ -238,7 +234,7 @@ ptyprocess==0.7.0
 pure-eval==0.2.3
     # via stack-data
 pyarrow==20.0.0
-    # via -r requirements/base.in
+    # via -r base.in
 pycparser==2.22
     # via cffi
 pygments==2.19.1
@@ -270,7 +266,7 @@ referencing==0.36.2
     #   jsonschema
     #   jsonschema-specifications
     #   jupyter-events
-requests==2.32.3
+requests==2.32.4
     # via jupyterlab-server
 rfc3339-validator==0.1.4
     # via
@@ -286,7 +282,7 @@ rpds-py==0.25.1
     #   referencing
 scikit-learn==1.6.1
     # via
-    #   -r requirements/base.in
+    #   -r base.in
     #   pynndescent
     #   umap-learn
 scipy==1.15.3
@@ -356,7 +352,7 @@ typing-extensions==4.14.0
 tzdata==2025.2
     # via pandas
 umap-learn==0.5.7
-    # via -r requirements/base.in
+    # via -r base.in
 uri-template==1.3.0
     # via jsonschema
 urllib3==2.4.0
